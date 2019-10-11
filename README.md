@@ -2,15 +2,15 @@ CheckFxmlControllerFile is a Java command line application the takes exactly two
 
 For example, if the fxml file contains this code:
 
-<TextField fx:id="textField" onAction="#handleTextFieldAction" prefWidth="168.0" />,
+`<TextField fx:id="textField" onAction="#handleTextFieldAction" prefWidth="168.0" />`,
 
 then the application will search the controller file for something similar to this:
 
-@FXML
- private TextField textField; and this:
+`@FXML
+ private TextField textField;` and this:
 
-@FXML
- private void handleTextFieldAction() ...
+`@FXML
+ private void handleTextFieldAction() ...`
 
 It outputs to the console the number of missing items and a list of the missing items.
 For example:
