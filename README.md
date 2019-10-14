@@ -1,4 +1,8 @@
-CheckFxmlControllerFile is a Java command line application the takes exactly two arguments. It is used as follows: Java -jar CheckFxmlControllerFile.jar path_to_fxml_file path_to_controller_file.  It parses the fxml file and searches for elements that have "fx_id" and "onAction" attributes.  It then searches the corresponding Java controller file to determine whether or not it correctly reflects the relevant values of those elements.
+CheckFxmlControllerFile is a Java command line application the takes exactly two arguments. It is used as follows: 
+
+`Java -jar CheckFxmlControllerFile.jar path_to_fxml_file path_to_controller_file`.
+
+It parses the fxml file and searches for elements that have "fx_id" and "onAction" attributes.  It then searches the corresponding Java controller file to determine whether or not it correctly reflects the relevant values of those elements.
 
 For example, if the fxml file contains this code:
 
